@@ -14,5 +14,5 @@ RUN rm /var/dynamo_db_local/dynamo_db.tar.gz
 
 EXPOSE 8000
 
-CMD ["java", "-Djava.library.path=/var/dynamo_db_local/DynamoDBLocal_lib", "-jar", "/var/dynamo_db_local/DynamoDBLocal.jar"]
+CMD ["java", "-Djava.library.path=/var/dynamo_db_local/DynamoDBLocal_lib", "-jar", "/var/dynamo_db_local/DynamoDBLocal.jar", "-dbPath", "/var/dynamo_db_local"]
 
